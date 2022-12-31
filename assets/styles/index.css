@@ -1,0 +1,194 @@
+/* Configuarción del proyecto*/
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf"),
+    url("../fonts/static/PlusJakartaSans-ExtraBold.ttf"),
+    url("../fonts/static/PlusJakartaSans-Medium.ttf");
+}
+
+:root {
+  --primary-red: #f65351;
+  --primary-blue: #0a317b;
+  --white: #ffffff;
+  --very-light-grayish-blue: #f7fafd;
+  --light-grayish-blue1: #e5effa;
+  --light-grayish-blue2: #dde7ee;
+  --grayish-blue: #939dae;
+  --dark-grayish-blue: #5e6778;
+  --very-dark-blue: #1c202b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  background-color: var(--very-light-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Clases reutilizables */
+.align-center {
+  align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.jusitfy-between {
+  justify-content: space-between;
+}
+
+/* Estilos particulares */
+.comment {
+  background-color: var(--very-light-grayish-blue);
+}
+
+.important {
+  font-weight: bold;
+}
+
+.important:hover {
+  cursor: pointer;
+  color: var(--primary-blue);
+}
+
+.mark-read {
+  cursor: pointer;
+}
+
+.mark-read:hover {
+  color: var(--primary-blue);
+}
+
+p.message {
+  border: 1px solid var(--light-grayish-blue2);
+  padding: 1rem;
+}
+
+.message:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-blue1);
+}
+
+.notification {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.notification * {
+  margin: 0;
+  padding: 0;
+}
+
+.notification-alert {
+  background-color: var(--very-light-grayish-blue);
+}
+
+.notification .notification-img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 20px ;
+    
+}
+
+.notification-info p.alert::after {
+  content: "";
+  display: inline-block;
+  margin: 0 0.25rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-red);
+}
+
+.notification-info p {
+  margin: 0.25rem 0;
+}
+
+.notification-info .important {
+  color: var(--dark-grayish-blue);
+}
+.notification-info .important:hover {
+  color: var(--primary-blue);
+}
+
+.notification  img {
+  border-radius: 50%;
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.notification-info {
+  margin: 0 1rem;
+}
+
+.notification-info > p {
+  color: var(--very-dark-blue);
+}
+
+.notification-number {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 0.15rem 0.8rem;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
+.notifications {
+  background-color: #fff;
+  width: 60vw;
+  padding: 2rem;
+}
+
+.postname{
+    color: var(--dark-grayish-blue);
+}
+
+.username {
+  font-weight: bold;
+}
+
+.username:hover {
+  cursor: pointer;
+  color: var(--primary-blue);
+}
+
+.time {
+  color: var(--grayish-blue);
+}
